@@ -1,5 +1,5 @@
 import React from 'react'
-import { List } from '../../../components/Overview'
+import { List } from 'src/components/Overview'
 import { Container } from './styles'
 
 
