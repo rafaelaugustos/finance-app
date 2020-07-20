@@ -4,7 +4,7 @@ const ContainerHeader = styled.View`
   background: #F5F7FB;
   height: 200px;
   justify-content: flex-end;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 `
 
 const ContainerStatistics = styled.View`
@@ -37,6 +37,8 @@ const StatisticsSpan = styled.Text`
 const Content = styled.View`
   padding-left: 15px;
   padding-right: 15px;
+  justify-content: ${props => props.align || 'flex-start' };
+  padding-bottom: ${props => props.pb || 0 };
 `
 
 const Item = styled.View`
