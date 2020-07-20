@@ -1,5 +1,44 @@
 import styled from 'styled-components/native'
 
+const ContainerHeader = styled.View`
+  background: #F5F7FB;
+  height: 200px;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+`
+
+const ContainerStatistics = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+const StatisticsItem = styled.View`
+  flex-direction: column;
+`
+
+const StatisticsTitle = styled.Text`
+  font-size: 40px;
+  margin-bottom: 30;
+  color: #152975;
+  font-weight: 500;
+`
+
+const StatisticsSubtitle = styled.Text`
+  font-size: 23px;
+  color: #152975;
+  font-weight: 400;
+`
+
+const StatisticsSpan = styled.Text`
+  font-size: 16px;
+  color: #666;
+`
+
+const Content = styled.View`
+  padding-left: 15px;
+  padding-right: 15px;
+`
+
 const Item = styled.View`
   flex-direction: row;
   align-items: center;
@@ -37,4 +76,4 @@ const SubTitle = styled.Text`
   margin-top: 7px;
 `
 
-export { Item, Title, SubTitle, Column, Icon, ContainerIcon }
+export { Content, ContainerStatistics, StatisticsTitle, StatisticsItem, StatisticsSubtitle, StatisticsSpan, Item, Title, SubTitle, Column, Icon, ContainerIcon, ContainerHeader }

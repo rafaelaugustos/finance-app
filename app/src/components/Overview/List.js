@@ -1,6 +1,7 @@
 import React from 'react'
 import { FlatList } from 'react-native'
 import ListItem from './ListItem'
+import { Content } from './styles'
 
 const data = [
 	{ id: 1, icon: require('icons/food.png'), title: 'Food & Drinks', transactions: 45 },
@@ -11,7 +12,11 @@ const data = [
 ]
 
 const List = () => {
-	return <FlatList data={data} renderItem={({ item }) => <ListItem item={item} />} />
+	return (
+		<Content>
+			<FlatList data={data} renderItem={({ item }) => <ListItem item={item} />} />
+		</Content>
+	)
 }
 
 export { List }
