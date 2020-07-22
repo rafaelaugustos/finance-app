@@ -1,8 +1,16 @@
 import styled from 'styled-components/native'
 
+const TitleHeader = styled.Text`
+	color: #152975;
+	font-weight: 500;
+	font-size: 23px;
+	margin-top: 50px;
+	margin-left: 15px;
+`
+
 const ContainerHeader = styled.View`
 	background: #f5f7fb;
-	height: 200px;
+	/* height: 200px; */
 	justify-content: flex-end;
 `
 
@@ -76,6 +84,7 @@ const SubTitle = styled.Text`
 `
 
 export {
+	TitleHeader,
 	Content,
 	ContainerStatistics,
 	StatisticsTitle,

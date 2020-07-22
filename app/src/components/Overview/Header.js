@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+	TitleHeader,
 	ContainerHeader,
 	ContainerStatistics,
 	StatisticsItem,
@@ -58,8 +59,9 @@ const Header = () => {
 
 	return (
 		<ContainerHeader>
+			<TitleHeader>Overview</TitleHeader>
 			<StackedAreaChart
-				style={{ height: 200, paddingVertical: 0, justifyContent: 'flex-end' }}
+				style={{ height: 160, paddingVertical: 0, justifyContent: 'flex-end' }}
 				data={data}
 				keys={keys}
 				colors={colors}
